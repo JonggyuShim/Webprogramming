@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>7-1강</title>
+      <style>
+            /* 태그 선택자 */
+            section {
+                  background-color: aqua;
+            }
+            /* class 선택자 */
+            .container {
+                  background-color: yellow;
+            }
+            /* id 선택자 */
+            #korea {
+                  background-color: beige;
+            }
+            .container .city {
+                  color: red;
+            }
+            .container.city {
+                  color: green;
+            }
+            /* 가상 선택자 */
+            a:link {
+                  color: black;
+            }
+            a:hover {
+                  color: white;
+                  background-color: red;
+            }
+            a:visited {
+                  color: black;
+            }
+            li:nth-child(2n) {
+                  background-color: purple;
+            }
+            /* 가상 요소 */
+            h3::before {
+                  content : " ! ";
+            }
+            h3::after {
+                  content : " ? ";
+            }
+            
+            
+      </style>
+</head>
+<body>
+      <section class="container city" id="korea">
+            <h3>한국의 도시</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore consequatur vitae aperiam vero, incidunt perspiciatis. Quo ratione reiciendis asperiores, earum ut nisi perspiciatis necessitatibus eligendi doloribus ex natus quae.</p>
+            <ul class="city">
+                  <li>서울</li>
+                  <li>부산</li>
+                  <li>대구</li>
+                  <li>광주</li>
+            </ul>
+      </section>
+      <section class="container" id="japan">
+            <h3>일본의 도시</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus repellendus, perspiciatis distinctio iste velit reiciendis in dolorem temporibus ratione obcaecati, quae libero consequatur cupiditate ex sit dicta sed mollitia.</p>
+            <ul class="city">
+                  <li>도쿄</li>
+                  <li>오사카</li>
+                  <li>후쿠오카</li>
+            </ul>
+      </section>
+      <section class="other_link">
+            <h3>다른 나라들은?</h3>
+            <ul>
+                  <li>
+                        <a href="https://ko.wikipedia.org/wiki/%EB%9F%AC%EC%8B%9C%EC%95%84">러시아</a>
+                  </li>
+                  <li>
+                        <a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EA%B5%AD">미국</a>
+                  </li>
+            </ul>
+      </section>      
+</body>
+</html>
